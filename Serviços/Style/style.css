@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+
+:root{
+    --cor-principal:#3C3C3C;  
+    --cor-secundaria:#515151;  
+    --cor-terciaria:#666666;  
+    --cor-quarta:#8C8C8C;
+    --cor--quinta:#b5b5b5;
+    --cor-hover: #c7ae79;  
+}
+
+html{
+    max-width: 100%;
+}
+
+body{
+    font-family: 'Montserrat';
+    padding-top: 75px;
+    background-image: url('render\ serv.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 0;
+}
+
+/*************************************/
+/*              HEADER               */
+/*************************************/
+
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    height: 70px;
+    position:fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding-left: 70px;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.header-scrolled{
+    background-color: var(--cor-secundaria);
+}
+
+.imagem-logo{
+    width: 120px;
+    height: 70px;
+    cursor: pointer;
+}
+
+nav{
+    margin: 0px;
+}
+
+#burguer{
+    display: none;
+}
+
+nav li ul{
+    position:absolute;
+    top:25px;
+    left:0;
+    display:none;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+    gap: 3rem;
+    text-decoration: none;
+    margin: 0 350px;
+    align-items: center;
+}
+
+li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+li a:hover{
+    transition: all 0.3s ease-in-out;
+    color: white;
+    text-decoration: underline 2px solid #c7ae79;
+
+}
+
+li a:active{
+    text-decoration: underline 2px solid ;
+}
+
+
+
+/****************************************************/
+
+/*********************************************************/
+
+.conteudo{
+    padding: 80px 80px;
+    
+}
+
+.passo{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.passo h1{
+    text-align: center;
+    color: white;
+}
+
+.passo p{
+    text-align: center;
+    color: white;
+}
+
+#todos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 15px 10px;
+    gap: 20px;
+    justify-content: space-around;
+    margin-top: 250px;
+}
+
+/*************************CARDS****************************/
+
+.cards h1{
+    font-size: 20px;
+}
+
+.cards1 h1{
+    font-size: 20px;
+}
+
+.cards2 h1{
+    font-size: 20px;
+}
+
+.cards3 h1{
+    font-size: 20px;
+}
+
+.cards4 h1{
+    font-size: 20px;
+}
+
+
+
+.cards, .cards1, .cards2, .cards3, .cards4{
+    display: flex;
+    padding: 20px;
+    margin: 30px 0px;    
+    background-color: var(--cor-hover);
+    border-radius: 10px;
+    gap: 50px;
+}
+
+
+
+
+/**************************************************************/
+section a{
+    background-color: var(--cor-hover);
+    color: var(--cor-principal);
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    margin: 0px 600px;
+}
+
+section a:hover{
+    background-color: white;
+    color: var(--cor-principal);
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border: solid #b5b5b5 1px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    margin: 0px 600px;
+    transition: all 0.3s ease-in;
+}
+
+/***************************************************************/
+.container{
+    margin-top: 35px;
+    background-color: var(--cor-quarta);
+    padding: 20px;
+    border-radius: 5px 5px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin: 20px 100px 0px 100px;
+}
+
+.container-contato{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-contato a{
+    color: #25262a;
+    line-height: 30px;
+    text-decoration: none;
+}
+
+footer{
+    background-color: var(--cor-terciaria);
+    height: 100%;
+    margin: 0;
+    justify-content: center;
+}
+
+footer p{
+    margin: 0;
+    text-align: center;
+    padding: 5px;
+}
+
+/********* WHATSAPP *******/
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 50px;
+    right: 80px;
+    z-index: 999;
+  }
+  
+  .whatsapp-button img {
+    width: 100px; /* Tamanho do ícone do WhatsApp */
+    height: 100px;
+    border-radius: 50%;
+    background-color: #25d366; /* Cor de fundo do botão */
+    padding: 20px; /* Espaçamento interno */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Sombra */
+    cursor: pointer;
+  }
+  
+  .whatsapp-button img:hover {
+    background-color: #128c7e; /* Cor de fundo do botão ao passar o mouse */
+  }
+  
+
+
+
+
+

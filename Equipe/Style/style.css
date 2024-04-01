@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+
+:root{
+    --cor-principal:#3C3C3C;  
+    --cor-secundaria:#515151;  
+    --cor-terciaria:#666666;  
+    --cor-quarta:#8C8C8C;
+    --cor--quinta:#b5b5b5;
+    --cor-hover: #c7ae79;  
+}
+
+html{
+    max-width: 100%;
+}
+
+body{
+    font-family: 'Montserrat';
+    background-image: url('CASA\ 06_MSEC\ CONSTRUTORA.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-top: 75px;
+}
+
+/*************************************/
+/*          HEADER                   */
+/*************************************/
+
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    height: 70px;
+    position:fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding-left: 150px;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.header-scrolled{
+    background-color: var(--cor-secundaria);
+}
+
+.imagem-logo{
+    width: 120px;
+    height: 70px;
+    cursor: pointer;
+}
+
+nav{
+    margin: 0px;
+}
+
+#burguer{
+    display: none;
+}
+
+nav li ul{
+    position:absolute;
+    top:25px;
+    left:0;
+    display:none;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+    gap: 3rem;
+    text-decoration: none;
+    margin: 0 350px;
+    align-items: center;
+}
+
+li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+li a:hover{
+    transition: all 0.3s ease-in-out;
+    color: white;
+    text-decoration: underline 2px solid #c7ae79;
+
+}
+
+li a:active{
+    text-decoration: underline 2px solid;
+}
+
+
+
+/******************************************************************/
+.project_clientes{
+    padding: 50px 100px;
+    display: flex;
+    margin: 0;
+}
+
+.project_clientes h1{
+    font-size: 4em;
+    color: white;
+}
+
+.project_clientes p{
+    color: white;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+.btn-primary{
+    background-color: var(--cor-hover);
+    border: #25262a;
+    color: var(--cor-principal);
+    width: 5px 5px;
+    display: flex;
+    padding: 2px;
+    margin: 10px
+}
+
+.btn-primary:hover{
+    background-color: var(--cor-hover);
+    border: #25262a;
+    color: var(--cor-principal);
+    width: 10px 10px;
+    display: flex;
+    padding: 2px;
+    margin: 0px;
+}
+
+
+/*******************************************/
+
+
+#quem-somos{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-top: 250px;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+}
+
+.frases{
+    grid-column: 1;
+}
+
+#quem-somos .foto img{
+    grid-column: 2;
+    width: 350px;
+    border-radius: 20px;
+}
+
+#quem-somos h1{
+    text-align: center;
+}
+
+#quem-somos p{
+    text-align: center;
+    margin: 0px 150px;
+}
+
+/*****************************************/
+
+#construtora{
+    padding: 50px 150px;
+}
+
+
+
+#construtora h3{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px;
+    padding: 0px 10px;
+}
+
+.ceos{
+    display: flex;
+    justify-content: space-around;
+}
+
+.financeiro{
+    display: flex;
+    justify-content: space-around;
+}
+.arquiteto{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.servico{
+    width: 30%;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.servico h3{
+    text-align: center;
+    margin: 15px;
+}
+
+.servico p{
+    text-align: center;
+}
+
+.servico img{
+    margin-left: 10px;
+}
+
+.imagem-colab{
+    border: 1px solid  #ccc;
+    border-radius: 50px;
+    width: 100%;
+}
+
+/*******************************************************************/
+
+.container{
+    margin-top: 35px;
+    background-color: var(--cor-quarta);
+    padding: 20px;
+    border-radius: 5px 5px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-contato{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-contato a{
+    color: #25262a;
+    line-height: 30px;
+    text-decoration: none;
+}
+
+footer{
+    background-color: var(--cor-terciaria);
+    height: 100%;
+    margin: 0;
+    justify-content: center;
+}
+
+footer p{
+    margin: 0;
+    text-align: center;
+    padding: 5px;
+}
+
+
+/********* WHATSAPP *******/
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 50px;
+    right: 80px;
+    z-index: 999;
+  }
+  
+  .whatsapp-button img {
+    width: 100px; /* Tamanho do ícone do WhatsApp */
+    height: 100px;
+    border-radius: 50%;
+    background-color: #25d366; /* Cor de fundo do botão */
+    padding: 20px; /* Espaçamento interno */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Sombra */
+    cursor: pointer;
+  }
+  
+  .whatsapp-button img:hover {
+    background-color: #128c7e; /* Cor de fundo do botão ao passar o mouse */
+  }
+  
+

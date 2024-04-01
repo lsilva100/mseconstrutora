@@ -1,0 +1,199 @@
+@media(max-width: 768px) {
+    header{
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+    }
+
+    #menu{
+        display: none;
+        flex-direction: column;
+    }
+    #menu.show-menu {
+        display: block; /* Mostrar o menu quando a classe show-menu estiver presente */
+    }
+
+    ul{
+        display: flex;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        
+    }
+
+    #burguer{
+        display: block;
+        background-color: #c7ae79;
+        color: #515151 ;
+        text-align: center;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    
+    .project_clientes{
+        padding: 0 40px;
+        margin: 0;
+    }
+
+    .project_clientes_content h1{
+        font-size: 30px;
+    }
+    .project_clientes_content p{
+        font-size: 16px;
+    }
+
+    /********************************************/
+    
+    .conteudo-andamento{
+        margin-top: 50px;
+    }
+
+    .conteudo h1{
+        padding: 50px 40px;
+    }
+
+    .cards{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 100px;
+        gap: 50px;
+    }
+
+    .card-text{
+        font-size: 14px;
+        
+    }
+
+    .container{
+        margin: 0;
+        max-width: 100%;
+    }
+
+
+}
+
+@media (max-width: 560px){
+   
+    .project_clientes{
+        display: flex;
+        text-align: center;
+    }
+
+    .project_clientes_content h1{
+        font-size: 28px;
+    }
+    .project_clientes_content p{
+        display: none;
+    }
+
+    .conteudo-andamento{
+        margin-top: 25px;
+    }
+
+    .conteudo h1{
+        text-align: center;
+    }
+
+    .cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+}
+
+@media(max-width: 426px){
+    .project_clientes{
+        display: flex;
+        text-align: center;
+    }
+
+    .project_clientes_content h1{
+        font-size: 28px;
+    }
+    .project_clientes_content p{
+        display: none;
+    }
+
+       
+    
+}
+
+@media(max-width: 396px){
+    body{
+        max-width: 100%;
+    }
+
+    #fraseImpactante{
+        padding: 0 50px;
+    }
+
+    .botao1{
+        padding: 5px 2px;
+    }
+
+    ul li a{
+        font-size: 12px;
+    }
+
+    ul{
+        gap: 10px;
+    }
+
+    #burguer{
+        width: 70px;
+        height: 40px;
+    }
+
+    #depoimentos{
+        margin-bottom: 250px;
+    }
+
+    .container-footer{
+        margin: 0;
+        padding: 15px;
+    }
+
+    .container-contato{
+        font-size: 13px;
+        
+    }
+
+    .carousel-container{
+        margin:0px;
+        width:100%;
+    }
+
+    main{
+        margin: 0;
+    }
+
+    #quem-somos .frases p{
+        font-size: 12px;
+    }
+
+    #quem-somos .foto img{
+        width: 200px;
+    }
+
+    .imagem-colab{
+        border-radius: 25px;
+
+    }
+
+    .foto img{
+        width: 70%;
+    }
+
+    .conteudo-andamento{
+        margin: 0px 50px;
+    }
+
+   .cards{
+    margin: 0;
+    padding: 0;
+   }
+}

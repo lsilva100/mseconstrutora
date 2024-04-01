@@ -1,0 +1,247 @@
+/* CSS media query dentro de um stylesheet */
+@media (max-width: 768px) {
+    html{
+        max-width: 100%;
+    }
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+        
+    }
+
+    #menu{
+        display: none;
+        flex-direction: column; /* Mudança para exibir em coluna */
+    }
+    #menu.show-menu {
+        display: block; /* Mostrar o menu quando a classe show-menu estiver presente */
+    }
+
+    ul{
+        display: flex;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        
+    }
+
+    #burguer{
+        display: block;
+        background-color: #c7ae79;
+        color: #515151 ;
+        text-align: center;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    #fraseImpactante{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 105px;
+        margin: 0;
+        height: auto;
+    }
+
+    .frase{
+        margin: 20px;
+        text-align: center;
+    }
+
+    .frase h1{
+        font-size: 24px;
+        font: bold;
+    }
+
+    .frase p{
+        font-size: 28px;
+    }
+
+    #botao{
+        width: 100%;
+        margin: 0;
+    }
+    /************************************************/
+
+    main{
+        margin: 0px;
+        margin-bottom: 30px;
+        margin-top: 50px;
+        padding: 0px 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .conteudo h1{
+        font-size: 24px;
+        font: bold;
+    }
+
+
+    .paragrafo h5{
+        font-size: 16px;
+    }
+
+    /*************************************************/
+    
+    .cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    /********************************************************/
+
+    #depoimentos{
+        padding: 0;
+    }
+
+    .texto-conteudo h1{
+        font-size: 24px;
+    }
+
+    .testimonial h4{
+        font-size: 16px;
+    }
+
+    .container{
+        margin: 0;
+        max-width: 100%;
+    }
+
+    .container-contato a{
+        color: white;
+    }
+}
+
+@media (max-width: 426px){
+    #fraseImpactante{
+        padding: 0px 55px;
+    }
+    .frase{
+        margin: 25px;
+    }
+
+    .frase h1{
+        font-size: 18px;
+    }
+
+    .frase p{
+        font-size: 12px;
+    }
+    /**********************/
+    main{
+        margin-top: 40px;
+    }
+
+    #depoimentos{
+        padding: 15px;
+    }
+    .carousel-container{
+        margin:0px;
+        width:100%;
+    }
+
+    .container-footer{
+        margin: 0;
+        padding: 15px;
+    }
+
+    .container-contato{
+        font-size: 13px;
+        
+    }
+}
+
+@media(max-width: 596px ){
+    #fraseImpactante{
+        padding:0px 105px;
+    }
+
+    .frase{
+        margin: 0px;
+    }
+
+    main{
+        margin-top: 95px;
+    }
+}
+
+
+@media(max-width: 396px){
+    body{
+        max-width: 100%;
+    }
+
+    #fraseImpactante{
+        padding: 0 50px;
+    }
+
+    .botao1{
+        padding: 5px 2px;
+    }
+
+    ul li a{
+        font-size: 12px;
+    }
+
+    ul{
+        gap: 10px;
+    }
+
+    #burguer{
+        width: 70px;
+        height: 40px;
+    }
+
+    main{
+        margin-top: 50px;
+    }
+    #depoimentos{
+        margin-bottom: 250px;
+    }
+
+    .container-footer{
+        margin: 0;
+        padding: 15px;
+    }
+
+    .container-contato{
+        font-size: 13px;
+        
+    }
+
+    .carousel-container{
+        margin:0px;
+        width:100%;
+    }
+
+    img{
+        width: 50px;
+    }
+
+    .IMG-BAIXO{
+        width: 50px;
+        height: 25px;
+    }
+
+    .prev{
+        
+    }
+
+    .next{
+        
+    }
+
+    .foto img{
+        width: 100%;
+    }
+}   
+
+  
