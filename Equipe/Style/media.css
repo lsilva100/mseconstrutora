@@ -83,7 +83,7 @@
         display: none;
     }
 
-    @media(max-width: 396px){
+    @media(max-width: 402px){
         body{
             max-width: 100%;
         }
